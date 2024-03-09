@@ -12,25 +12,29 @@ const ScreenTwo = () => {
         <div className="card">
           <img src={banner} alt="img" />
           <div className="overlay">
-            <h3>Learning</h3>
+            <h3>Learning </h3>
+            <i class="fas fa-graduation-cap"></i>
           </div>
         </div>
         <div className="card">
           <img src={pic2} alt="img" />
           <div className="overlay">
-            <h3>Growing</h3>
+            <h3>Growing </h3>
+            <i class="fas fa-seedling"></i>
           </div>
         </div>
         <div className="card">
           <img src={pic3} alt="img" />
           <div className="overlay">
-            <h3>Experience</h3>
+            <h3>Experience </h3>
+            <i class="fas fa-eye"></i>
           </div>
         </div>
         <div className="card">
           <img src={pic4} alt="img" />
           <div className="overlay">
-            <h3>Be the Best</h3>
+            <h3>Be the Best </h3>
+            <i class="fas fa-fist-raised"></i>
           </div>
         </div>
       </div>

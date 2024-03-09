@@ -1,6 +1,6 @@
 .top-bottom{
   background-color: black;
-  height: 70vh;
+  height: 100vh;
 }
 .top-bottom h1{
   color: white;
@@ -11,9 +11,10 @@
   justify-content: center;
   align-items: flex-end;
 }
+
 /* Screen Two style */
 .screen-two-container{
-  height: 90vh;
+  height: 100vh;
   display: flex;
   position: relative;
   justify-content: center;
@@ -34,16 +35,28 @@
   position: relative;
   overflow: hidden;
   position: absolute;
-
+  transition: transform 0.5s ease-in-out;
 }
 .card:nth-child(2){
   transform: rotate(-15deg);
+  animation: slideOut 25s ease-in-out forwards;
+
 }
 .card:nth-child(3){
   transform: rotate(-10deg);
+  animation: slideOut 20s ease-in-out forwards;
 }
 .card:nth-child(4){
   transform: rotate(5deg);
+  animation: slideOut 15s ease-in-out forwards;
+}
+.card:nth-child(5){
+  animation: slideOut 10s ease-in-out forwards;
+}
+@keyframes slideOut {
+  0% { transform: translateY(0)  }
+  20%{transform: translateY(0) rotate(-15deg);}
+  100% { transform: translateY(-1500px) rotate(0deg); }
 }
 .card img {
   width: 100%;
@@ -59,9 +72,10 @@
   align-items: center;
   justify-content: center;
   background: rgba(204, 198, 198, 0.215);
-}
-.overlay h3{
   color: white;
+}
+.overlay i{
+  color: yellow;
 }
 .card-bottom{
   transform: translateY(-15deg);
