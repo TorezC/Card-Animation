@@ -4,9 +4,10 @@ import pic2 from '../../assets/pic2.jpeg'
 import pic3 from '../../assets/pic3.jpeg'
 import pic4 from '../../assets/pic4.jpeg'
 
-const ScreenTwo = () => {
+const ScreenTwo = ({...props}) => {
+    
   return (
-    <div className="screen-two-container">
+    <div className="screen-two-container" {...props}>
       <div className="card-container">
         <h1>A Large Text at the center </h1>
         <div className="card">
