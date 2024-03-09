@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import "./App.css";
 import Screens from "./components/Screens/Screens";
 import ScreenTwo from "./components/screenTwo/ScreenTwo";
